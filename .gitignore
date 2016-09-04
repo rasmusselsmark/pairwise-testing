@@ -1,3 +1,6 @@
 .DS_STORE
+*.log
 
 pict/
+node_modules/
+static/

@@ -1,0 +1,13 @@
+extend default
+
+block content
+  p.
+    Enter your PICT input below
+
+  div.loginbox
+    form(name="process", action="/process", method="post")
+      div.input
+        div.label PICT
+        textarea(name="description", cols="100%", rows="20")
+      div.actions
+        input(type="submit", value="Submit")

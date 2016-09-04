@@ -1,19 +1,15 @@
 var express = require('express')
   , logger = require('morgan')
   , app = express()
-  , template = require('pug').compileFile(__dirname + '/source/templates/homepage.pug')
+  , bodyParser = require('body-parser')
 
 app.use(logger('dev'))
 app.use(express.static(__dirname + '/static'))
+app.use(bodyParser.urlencoded({
+  extended: true
+}))
 
-app.get('/', function (req, res, next) {
-  try {
-    var html = template({ title: 'Home' })
-    res.send(html)
-  } catch (e) {
-    next(e)
-  }
-})
+var routes = require('./routes')(app);
 
 app.listen(process.env.PORT || 3000, function () {
   console.log('Listening on http://localhost:' + (process.env.PORT || 3000))

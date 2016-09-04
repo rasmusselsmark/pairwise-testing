@@ -1,6 +1,6 @@
 # pairwise-testing
 
-Web frontend for Microsoft PICT tool for pairwise testing
+Web frontend for Microsoft PICT tool for pairwise test case generation
 
 ## PICT
 
@@ -26,7 +26,7 @@ PICT is one of the tools I'm using relatively often in my work to provide suffic
 
 Prequisites:
 
-- Docker
+- Docker <https://www.docker.com/>
 
 To build docker container with pict and website
 

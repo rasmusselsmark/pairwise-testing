@@ -27,7 +27,7 @@ docker-build:
 .PHONY: docker-run
 docker-run:
 	docker ps --all --quiet --filter name=$(dockername) | xargs docker rm --force
-	docker run --name $(dockername) --publish 3000:3000 $(dockerimage) make run-server
+	docker run --name $(dockername) --publish 3000:3000 $(dockerimage)
 
 .PHONY: docker-stop
 docker-stop:

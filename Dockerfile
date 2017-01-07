@@ -8,6 +8,7 @@ RUN apk add --update python
 RUN apk add --update bash
 
 EXPOSE 3000
+ENTRYPOINT ["make", "run-server"]
 
 COPY . /pairwise-testing/
 

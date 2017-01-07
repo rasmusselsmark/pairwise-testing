@@ -14,13 +14,14 @@ PICT is one of the tools I'm using relatively often in my work to provide suffic
 
 ### Local development
 
-1. Run `make pict`
+1. Run `make`
 1. Run `make dev`
 1. Open <http://localhost:3000>
 
 ### Local production
 
 1. Run `make`
+1. Run `make run-server`
 
 ### Docker container
 
@@ -30,4 +31,5 @@ Prequisites:
 
 To build docker container with pict and website
 
-1. Run `make docker` from Docker Quickstart Terminal
+1. Run `make docker-build` from Docker Quickstart Terminal to build docker image
+1. Run `make docker-run` to start Docker container

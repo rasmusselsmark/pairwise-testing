@@ -14,7 +14,7 @@ web:
 
 .PHONY: dev
 dev:
-	cd web; npm install; npm run-script watch
+	cd web; npm install; npm run watch
 
 .PHONY: run-server
 run-server:
